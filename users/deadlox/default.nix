@@ -12,7 +12,7 @@ in
 
   imports = [
     flake-inputs.home-manager.nixosModules.default
-#    lazyvim.homeManagerModules.default
+    lazyvim.homeManagerModules.default
   ];
 
   options.userconfig.deadlox = {
