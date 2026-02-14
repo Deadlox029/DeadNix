@@ -14,7 +14,6 @@
     mangohud
     protonup-ng
     prismlauncher
-    nethack
     vitetris
     r2modman
   ];

@@ -1,4 +1,4 @@
-{
+'{
   description = "A very basic flake";
 
   inputs = {
@@ -21,6 +21,10 @@
     agenix = {
       url = "github:ryantm/agenix";
       inputs.nixpkgs.follows = "nixpkgs";
+    };
+  
+    lazyvim = {
+	url ="github:pfassina/lazyvim-nix"
     };
 
     # Custom hardware tweaks
@@ -86,7 +90,13 @@
             inputs.agenix.nixosModules.default
           ];
         };
-
+	
+	deadnix = mkConfiguration {
+	 system  = "x86_64-linux";
+	 modules = [
+	   ./hosts/deadnix/configuration.nix
+	 ];
+	};
         # more configs here
         # my-hostname = mkConfiguration {
         #   system = "x86_64-linux";
