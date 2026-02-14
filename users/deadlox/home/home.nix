@@ -11,8 +11,8 @@
   ];
   # Home Manager needs a bit of information about you and the
   # paths it should manage.
-  home.username = "b";
-  home.homeDirectory = "/home/b";
+  home.username = "deadlox";
+  home.homeDirectory = "/home/deadlox";
 
   # This value determines the Home Manager release that your
   # configuration is compatible with. This helps avoid breakage
@@ -31,9 +31,9 @@
 
   programs.bash.enable = true;
   home.sessionVariables = {
-    MANGOHUD_CONFIGFILE = "/home/b/.config/mangohud.conf";
+    MANGOHUD_CONFIGFILE = "/home/deadlox/.config/mangohud.conf";
     EDITOR = "nvim";
-    STEAM_EXTRA_COMPAT_TOOLS_PATHS = "/home/b/.steam/root/compatibilitytools.d";
+    STEAM_EXTRA_COMPAT_TOOLS_PATHS = "/home/deadlox/.steam/root/compatibilitytools.d";
   };
 
   home.file.".config/mangohud.conf".source = ./mangohud.conf;
@@ -57,8 +57,8 @@
 
   programs.git.enable = true;
   programs.git.settings = {
-    user.name = "Brennan Seymour";
-    user.email = "brenno263@gmail.com";
+    user.name = "Deadlox029";
+    user.email = "deadlox029@gmail.com";
     alias = {
       co = "checkout";
       st = "status";

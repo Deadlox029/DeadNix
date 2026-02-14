@@ -35,9 +35,9 @@ in
   ];
 
   # Users config
-  userconfig.Deadlox = {
+  userconfig.deadlox = {
     enable = true;
-    hostname = deadnix;
+    hostname = hostname;
   };
 
   home-manager = {
@@ -67,7 +67,7 @@ in
     SUBSYSTEM=="usbmon", GROUP="wireshark", MODE="0640"
   '';
 
-  networking.hostName = deadnix; # Define your hostname.
+  networking.hostName = hostname; # Define your hostname.
 
   # Enable networking
   networking.networkmanager.enable = true;
