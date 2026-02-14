@@ -12,7 +12,7 @@ in
 
   imports = [
     flake-inputs.home-manager.nixosModules.default
-    lazyvim.homeManagerModules.default
+#    lazyvim.homeManagerModules.default
   ];
 
   options.userconfig.deadlox = {
@@ -50,7 +50,7 @@ in
       nerd-fonts.meslo-lg
       nerd-fonts.fira-code
     ];
-    programs.lazyvim.enable = true;
+#    programs.lazyvim.enable = true;
     programs.zsh.enable = true;
     home-manager = {
       users.deadlox = ./home/home.nix;
