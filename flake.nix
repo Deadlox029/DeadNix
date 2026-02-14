@@ -24,7 +24,7 @@
     };
   
     lazyvim = {
-	url ="github:pfassina/lazyvim-nix"
+	url ="github:pfassina/lazyvim-nix";
     };
 
     # Custom hardware tweaks
