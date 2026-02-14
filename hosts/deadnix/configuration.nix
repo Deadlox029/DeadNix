@@ -102,7 +102,7 @@ in
     #   limit = 160;
     #   window = 0.004;
     # };
-  };
+#  };
 
   # Enable the X11 windowing system.
   services.xserver.enable = true;
