@@ -72,13 +72,13 @@ in
 
     settings = {
       "$mod" = "SUPER";
-      "$mon1" = "DP-2"; # main monitor
-      "$mon2" = "DP-1"; # secondary monitor
+      "$mon1" = "DP-1"; # main monitor
+      "$mon2" = "DP-2"; # secondary monitor
 
       monitor = [
         # port, mode, position
-        "DP-1, 2560x1440@60, 0x0, 1"
-        "DP-2, 2560x1440@120, 0x1440, 1"
+        "DP-1, 3440x1440@165, 0x0, 1"
+        "DP-2, 2560x1440@60, 3440x0, 1"
       ];
 
       # Startup Apps
