@@ -25,7 +25,7 @@
   
 #    lazyvim = {
 #	url ="github:pfassina/lazyvim-nix";
-    };
+#    };
 
     # Custom hardware tweaks
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
