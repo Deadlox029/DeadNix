@@ -6,8 +6,8 @@
   ...
 }:
 let
-  wallpaper-file-1 = ./Space_pan_DP1.jpg;
-  wallpaper-file-2 = ./Space_pan_DP2.jpg;
+  wallpaper-file-1 = ./purple_landscape1.jpg;
+  wallpaper-file-2 = ./purple_landscape2.jpg;
 in
 {
   home.packages = with pkgs; [
@@ -53,23 +53,16 @@ in
       wallpaper = [
         {
           # Monitor 1 wallpaper
-          monitor = DP-1;
+          monitor = "DP-1";
           # can be a dir
           path = "${wallpaper-file-1}";
           fit_mode = "fill";
         }
         {
           # Monitor 2 Wallpaper
-          monitor = DP-2;
+          monitor = "DP-2";
           # can be a dir
           path = "${wallpaper-file-2}";
-          fit_mode = "fill";
-        }
-        {
-          # Fallback
-          monitor = "";
-          # can be a dir
-          path = ./geo-colors.png";
           fit_mode = "fill";
         }
       ];
