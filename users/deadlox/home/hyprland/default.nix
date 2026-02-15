@@ -6,7 +6,8 @@
   ...
 }:
 let
-  wallpaper-file = ./geo-colors.png;
+  wallpaper-file-1 = ./Space_pan_DP1.jpg;
+  wallpaper-file-2 = ./Space_pan_DP2.jpg;
 in
 {
   home.packages = with pkgs; [
@@ -51,11 +52,25 @@ in
     settings = {
       wallpaper = [
         {
-          # empty monitor is all
+          # Monitor 1 wallpaper
+          monitor = DP-1;
+          # can be a dir
+          path = "${wallpaper-file-1}";
+          fit_mode = "fill";
+        }
+        {
+          # Monitor 2 Wallpaper
+          monitor = DP-2;
+          # can be a dir
+          path = "${wallpaper-file-2}";
+          fit_mode = "fill";
+        }
+        {
+          # Fallback
           monitor = "";
           # can be a dir
-          path = "${wallpaper-file}";
-          fit_mode = "cover";
+          path = ./geo-colors.png";
+          fit_mode = "fill";
         }
       ];
     };
