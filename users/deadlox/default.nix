@@ -50,7 +50,7 @@ in
       nerd-fonts.meslo-lg
       nerd-fonts.fira-code
     ];
-    programs.lazyvim.enable = true;
+#    programs.lazyvim.enable = true;
     programs.zsh.enable = true;
     home-manager = {
       users.deadlox = ./home/home.nix;
